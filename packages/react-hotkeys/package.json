@@ -1,0 +1,68 @@
+{
+    "name": "@monstermann/react-hotkeys",
+    "type": "module",
+    "version": "0.0.0",
+    "description": "React hooks for @monstermann/hotkeys",
+    "author": "Michael Ostermann <michaelostermann@me.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/MichaelOstermann/hotkeys#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MichaelOstermann/hotkeys.git"
+    },
+    "bugs": "https://github.com/MichaelOstermann/hotkeys/issues",
+    "keywords": [
+        "hotkey",
+        "hotkeys",
+        "key",
+        "keys",
+        "keybinding",
+        "keybindings",
+        "keyboard",
+        "shortcut",
+        "shortcuts",
+        "chord",
+        "chords",
+        "keychord",
+        "keychords",
+        "sequence",
+        "vscode",
+        "vim",
+        "neovim",
+        "react",
+        "hook",
+        "hooks"
+    ],
+    "sideEffects": false,
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "./dist/**"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "prepublishOnly": "tsup"
+    },
+    "tsup": {
+        "clean": true,
+        "dts": true,
+        "entry": [
+            "./index.ts"
+        ],
+        "format": "esm"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0"
+    },
+    "dependencies": {
+        "@monstermann/hotkeys": "workspace:^",
+        "shallow-equal": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.1"
+    }
+}

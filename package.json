@@ -1,0 +1,20 @@
+{
+    "type": "module",
+    "version": "0.0.0",
+    "private": true,
+    "packageManager": "pnpm@9.1.1",
+    "scripts": {
+        "build": "pnpm -r build",
+        "lint": "eslint .",
+        "typecheck": "tsc --noEmit",
+        "test": " "
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^2.16.4",
+        "@sindresorhus/tsconfig": "^5.0.0",
+        "@types/node": "^20.12.11",
+        "eslint": "^9.1.1",
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.5"
+    }
+}
