@@ -1,8 +1,13 @@
-![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/%40monstermann/hotkeys/latest) ![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/%40monstermann/hotkeys/latest)
+<div align="center">
 
-# hotkeys
+<h1>hotkeys</h1>
 
-Highly flexible keyboard shortcut management for any environment.
+**Highly flexible keyboard shortcut management for any environment.**
+
+![Minified](https://img.shields.io/badge/Minified-4.52_KB-blue)
+![Minzipped](https://img.shields.io/badge/Minzipped-1.66_KB-blue)
+
+</div>
 
 This library focuses on providing the data-structure and building blocks necessary to allow you to build _probably™_ anything you can think of regarding shortcuts.
 

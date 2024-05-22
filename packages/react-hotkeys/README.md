@@ -1,8 +1,13 @@
-![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/min/%40monstermann/react-hotkeys/latest) ![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/%40monstermann/react-hotkeys/latest)
+<div align="center">
 
-# react-hotkeys
+<h1>react-hotkeys</h1>
 
-React hooks for `@monstermann/hotkeys`.
+**React hooks for `@monstermann/hotkeys`.**
+
+![Minified](https://img.shields.io/badge/Minified-1.65_KB-blue)
+![Minzipped](https://img.shields.io/badge/Minzipped-0.70_KB-blue)
+
+</div>
 
 ## Installation
 
