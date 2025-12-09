@@ -5,12 +5,14 @@
     "description": "Highly flexible keyboard shortcut management for any environment.",
     "author": "Michael Ostermann <michaelostermann@me.com>",
     "license": "MIT",
-    "homepage": "https://github.com/MichaelOstermann/hotkeys#readme",
+    "homepage": "https://MichaelOstermann.github.io/hotkeys",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/MichaelOstermann/hotkeys.git"
     },
-    "bugs": "https://github.com/MichaelOstermann/hotkeys/issues",
+    "bugs": {
+        "url": "https://github.com/MichaelOstermann/hotkeys/issues"
+    },
     "keywords": [
         "hotkey",
         "hotkeys",
@@ -33,59 +35,21 @@
     "sideEffects": false,
     "exports": {
         ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.js"
+            "types": "./dist/index.d.mts",
+            "import": "./dist/index.mjs"
         },
-        "./vscode": {
-            "types": "./dist/vscode.d.ts",
-            "import": "./dist/vscode.js"
-        },
-        "./vim": {
-            "types": "./dist/vim.d.ts",
-            "import": "./dist/vim.js"
-        },
-        "./plugins/enabled": {
-            "types": "./dist/plugins/enabled.d.ts",
-            "import": "./dist/plugins/enabled.js"
-        },
-        "./plugins/os": {
-            "types": "./dist/plugins/os.d.ts",
-            "import": "./dist/plugins/os.js"
-        },
-        "./plugins/preventDefault": {
-            "types": "./dist/plugins/preventDefault.d.ts",
-            "import": "./dist/plugins/preventDefault.js"
-        },
-        "./plugins/priority": {
-            "types": "./dist/plugins/priority.d.ts",
-            "import": "./dist/plugins/priority.js"
-        }
+        "./*": "./dist/*"
     },
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.mts",
     "files": [
-        "./dist/**"
+        "dist"
     ],
     "scripts": {
-        "build": "tsup",
-        "prepublishOnly": "tsup"
+        "bundle": "tsdown",
+        "release": "bun publish --access public"
     },
-    "tsup": {
-        "clean": true,
-        "dts": true,
-        "entry": {
-            "index": "./index.ts",
-            "vscode": "./src/syntax/vscode.ts",
-            "vim": "./src/syntax/vim.ts",
-            "plugins/enabled": "./src/plugins/enabled.ts",
-            "plugins/os": "./src/plugins/os.ts",
-            "plugins/preventDefault": "./src/plugins/preventDefault.ts",
-            "plugins/priority": "./src/plugins/priority.ts"
-        },
-        "format": "esm"
-    },
-    "dependencies": {
-        "type-fest": "^4.18.0"
-    }
+    "dependencies": {}
 }
+

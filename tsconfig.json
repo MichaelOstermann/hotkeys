@@ -1,11 +1,15 @@
 {
-    "extends": "@sindresorhus/tsconfig",
+    "extends": "@monstermann/tsconfig",
     "compilerOptions": {
         "paths": {
             "@monstermann/hotkeys": ["./packages/hotkeys/index.ts"],
             "@monstermann/react-hotkeys": ["./packages/react-hotkeys/index.ts"]
-        },
-        "noEmit": true
+        }
     },
-    "exclude": ["packages/*/dist/**"]
+    "exclude": [
+        "**/dist/**",
+        "**/node_modules/**",
+        "**/notes/**",
+        "**/playground/**"
+    ]
 }

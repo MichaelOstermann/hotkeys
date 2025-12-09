@@ -1,0 +1,32 @@
+import { modifiers } from "./modifiers"
+import { special } from "./special"
+
+export const aliases = {
+    " ": special.space,
+    "bksp": special.backspace,
+    "bs": special.backspace,
+    "caps": special.capslock,
+    "cmd": modifiers.meta,
+    "command": modifiers.meta,
+    "cr": special.enter,
+    "ctrl": modifiers.control,
+    "del": special.delete,
+    "down": special.arrowdown,
+    "downarrow": special.arrowdown,
+    "esc": special.escape,
+    "gt": ">",
+    "ins": special.insert,
+    "left": special.arrowleft,
+    "leftarrow": special.arrowleft,
+    "lt": "<",
+    "opt": modifiers.alt,
+    "option": modifiers.alt,
+    "pgdn": special.pagedown,
+    "pgup": special.pageup,
+    "return": special.enter,
+    "right": special.arrowright,
+    "rightarrow": special.arrowright,
+    "spc": special.space,
+    "up": special.arrowup,
+    "uparrow": special.arrowup,
+}
