@@ -1,7 +1,7 @@
 {
     "name": "@monstermann/hotkeys",
     "type": "module",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Highly flexible keyboard shortcut management for any environment.",
     "author": "Michael Ostermann <michaelostermann@me.com>",
     "license": "MIT",
