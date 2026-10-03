@@ -81,7 +81,10 @@ A hotkey is matched against a keyboard event, taking into account that the same 
 - When the event reports a latin letter or a digit, that is what is compared, and `shift` has to be as the hotkey says. `z` is the key that types a "z", wherever it is.
 - Otherwise the hotkey can match the reported character or the physical key:
     - Symbols match what is typed and ignore `shift`, which they need on some layouts and not on others: `?` matches whatever types a "?".
-    - The physical key is the one a US keyboard has in that place, with `shift` as the hotkey says: `ctrl+c` works on a cyrillic layout, `alt+a` on macOS where it types "å", `shift+1` where it types "!".
+    - The physical key is matched by its position, with `shift` as the hotkey says: `ctrl+c` works on a cyrillic layout, `alt+a` on macOS where it types "å", `shift+1` where it types "!".
+
+This works with every keyboard layout. Browsers name the position of a key after what a US keyboard has there (`event.code` is `KeyC` for the third key of the bottom row, whatever it types), so that is the name a hotkey uses for it.
+
 - Named keys such as `enter` are compared by name, with `shift` as the hotkey says.
 - Events during text composition (IME) never match.
 

@@ -18,7 +18,8 @@ const asciiLetterOrDigit = /^[a-z\d]$/i
  *   This follows the layout: `z` is the key that types a "z".
  * - Otherwise either the reported character or the physical key can match:
  *   - The reported character ignores `shift`, as symbols need it on some layouts and not on others: `?` matches whatever types a "?".
- *   - The physical key is the one a US keyboard has in that place, with `shift` as the hotkey says:
+ *   - The physical key is matched by its position, which browsers name after what a US keyboard has there
+ *     (`event.code`), whatever the layout. `shift` has to be as the hotkey says:
  *     `ctrl+c` works on a cyrillic layout, `alt+a` on macOS where it types "å", `shift+1` where it types "!".
  * - Named keys such as `Enter` or `ArrowDown` are compared by name, with `shift` as the hotkey says.
  * - Events during text composition (IME) never match.

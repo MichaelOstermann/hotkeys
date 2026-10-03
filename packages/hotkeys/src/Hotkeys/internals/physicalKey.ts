@@ -12,7 +12,7 @@ const symbols: Record<string, string> = {
     Slash: "/",
 }
 
-/** The character a physical key has on a US keyboard: `KeyA` → `a`, `Digit1` → `1`, `Slash` → `/`. */
+/** The character that `event.code` names a physical key after: `KeyA` → `a`, `Digit1` → `1`, `Slash` → `/`. */
 export function physicalKey(code: string): string | undefined {
     if (code.length === 4 && code.startsWith("Key")) return code[3]!.toLowerCase()
     if (code.length === 6 && code.startsWith("Digit")) return code[5]
