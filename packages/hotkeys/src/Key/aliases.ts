@@ -1,6 +1,24 @@
 import { modifiers } from "./modifiers"
 import { special } from "./special"
 
+/**
+ * # aliases
+ *
+ * ```ts
+ * const Key.aliases: Record<string, string>
+ * ```
+ *
+ * Other names for keys, mapped to the name they stand for: `esc` is `Escape`, `cmd` is `Meta`, `up` is `ArrowUp`.
+ *
+ * ## Example
+ *
+ * ```ts
+ * import { Key } from "@monstermann/hotkeys";
+ *
+ * Key.aliases.esc; // "Escape"
+ * Key.aliases.cmd; // "Meta"
+ * ```
+ */
 export const aliases = {
     " ": special.space,
     "bksp": special.backspace,

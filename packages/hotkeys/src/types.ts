@@ -1,3 +1,4 @@
+/** A key together with the modifiers that have to be held, see `Hotkeys.normalize`. */
 export type Hotkey = Partial<{
     alt: boolean
     ctrl: boolean
@@ -5,6 +6,18 @@ export type Hotkey = Partial<{
     meta: boolean
     shift: boolean
 }>
+
+/** What is needed from a `KeyboardEvent`. */
+export interface HotkeyEvent {
+    altKey: boolean
+    code: string
+    ctrlKey: boolean
+    isComposing?: boolean
+    key: string
+    metaKey: boolean
+    shiftKey: boolean
+    getModifierState?: (key: string) => boolean
+}
 
 export interface Binding {
     hotkeys: Hotkey[]

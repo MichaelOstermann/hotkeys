@@ -1,5 +1,23 @@
-import { createKeyMap } from "./internals"
+import { createKeyMap } from "./internals/createKeyMap"
 
+/**
+ * # special
+ *
+ * ```ts
+ * const Key.special: Record<string, string>
+ * ```
+ *
+ * The names of the keys that are not characters, by their name and its lowercase form: `Enter`, `ArrowDown`, `F1`, `Numpad1`, …
+ *
+ * ## Example
+ *
+ * ```ts
+ * import { Key } from "@monstermann/hotkeys";
+ *
+ * Key.special.enter; // "Enter"
+ * Key.special.ArrowDown; // "ArrowDown"
+ * ```
+ */
 // https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values
 export const special = createKeyMap([
     "ArrowDown",

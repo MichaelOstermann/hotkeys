@@ -6,9 +6,10 @@
 
 import { bind } from "./bind.js";
 import { bindings } from "./bindings.js";
-import { evt } from "./evt.js";
 import { isExactMatch } from "./isExactMatch.js";
 import { isPartialMatch } from "./isPartialMatch.js";
+import { matches } from "./matches.js";
+import { mod } from "./mod.js";
 import { normalize } from "./normalize.js";
 import { serialize } from "./serialize.js";
 import { unbind } from "./unbind.js";
@@ -19,9 +20,10 @@ declare namespace Hotkeys {
     export {
         bind,
         bindings,
-        evt,
         isExactMatch,
         isPartialMatch,
+        matches,
+        mod,
         normalize,
         serialize,
         unbind,
