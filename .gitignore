@@ -1,3 +1,6 @@
-dist
 .DS_Store
 node_modules
+packages/*/dist
+notes
+playground/*
+!playground/.keep

@@ -1,15 +1,11 @@
 {
     "extends": "@monstermann/tsconfig",
     "compilerOptions": {
-        "paths": {
-            "@monstermann/hotkeys": ["./packages/hotkeys/index.ts"],
-            "@monstermann/react-hotkeys": ["./packages/react-hotkeys/index.ts"]
-        }
+        "lib": ["DOM", "ES2023"],
+        "types": ["bun"]
     },
     "exclude": [
         "**/dist/**",
-        "**/node_modules/**",
-        "**/notes/**",
-        "**/playground/**"
+        "**/node_modules/**"
     ]
 }

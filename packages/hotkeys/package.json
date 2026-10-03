@@ -5,7 +5,7 @@
     "description": "Highly flexible keyboard shortcut management for any environment.",
     "author": "Michael Ostermann <michaelostermann@me.com>",
     "license": "MIT",
-    "homepage": "https://MichaelOstermann.github.io/hotkeys",
+    "homepage": "https://github.com/MichaelOstermann/hotkeys",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/MichaelOstermann/hotkeys.git"
@@ -47,9 +47,7 @@
         "dist"
     ],
     "scripts": {
-        "bundle": "tsdown",
-        "release": "bun publish --access public"
-    },
-    "dependencies": {}
+        "bundle": "tsdown"
+    }
 }
 

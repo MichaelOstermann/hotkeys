@@ -1,14 +1,11 @@
-import { defineConfig } from "@monstermann/barrels"
-import { flat } from "@monstermann/barrels-flat"
-import { namespace } from "@monstermann/barrels-namespace"
+import { defineConfig, flat, namespace } from "@monstermann/barrels"
 
 export default defineConfig([
     namespace({
-        entries: "./packages/hotkeys/src/*",
-        exclude: ["**/internals.ts"],
+        entries: "./packages/hotkeys/src/[A-Z]*",
     }),
     flat({
         entries: "./packages/hotkeys/src",
-        include: ["*", "*/index.js"],
+        include: ["*.ts", "[A-Z]*/index.js"],
     }),
 ])
