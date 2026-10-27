@@ -1,3 +1,6 @@
+> [!WARNING]
+> This package is no longer maintained. It moved into [`@monstermann/stdlib-web`](https://github.com/MichaelOstermann/stdlib/tree/main/packages/stdlib-web) as the `Shortcut` namespace.
+
 <div align="center">
 
 <h1>hotkeys</h1>
